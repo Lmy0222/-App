@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- 这是显示行星图片的图像视图 -->
+    <TextView
+        android:id="@+id/tv_time11"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="27sp"
+        tools:text="3月1日" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <!-- 这是显示行星名称的文本视图 -->
+        <TextView
+            android:id="@+id/tv_key111"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="地球" />
+
+        <!-- 这是显示行星描述的文本视图 -->
+        <TextView
+            android:id="@+id/tv_con1111"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:text="地球是太阳系八大行星之一，排行第三，也是太阳系中直径、质量和密度最大的类地行星，距离太阳1.5亿公里" />
+    </LinearLayout>
+</LinearLayout>

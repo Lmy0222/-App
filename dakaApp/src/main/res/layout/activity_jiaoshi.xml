@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bj"
+    android:padding="5dp">
+    <include layout="@layout/title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关键字:"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/et_guanjianzi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总结:"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/et_neirong"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_xianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询全部"
+        android:layout_marginTop="100px"
+        android:textSize="23sp"/>
+    <Button
+        android:id="@+id/btn_guanjianxianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关键字查询"
+        android:textSize="23sp"/>
+    <Button
+        android:id="@+id/btn_zongjiexianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="总结查询"
+        android:textSize="23sp"/>
+    <TextView
+        android:id="@+id/tv_xianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
